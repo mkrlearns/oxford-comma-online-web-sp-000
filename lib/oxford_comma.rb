@@ -3,7 +3,7 @@ def oxford_comma(array)
   array.each do |item|
     if item.length == 2 && item == item.first
       string << item
-    elsif item != array.last
+    elsif item != array.last && item.length > 2
       string << "#{item}, "
     else
       string << "and #{item}"
