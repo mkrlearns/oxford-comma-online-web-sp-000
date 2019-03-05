@@ -6,4 +6,5 @@ def oxford_comma(array)
       array << ", and #{item}"
     end
   end
+  array
 end
