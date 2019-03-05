@@ -4,9 +4,9 @@ def oxford_comma(array)
     if item.length == 2 && item == item.first
       string << item.length
     elsif item != array.last && item.length > 2
-      string << "#{item}, "
+      string << "#{item.length}, "
     else
-      string << "and #{item}"
+      string << "and #{item.length}"
     end
   end
   string
