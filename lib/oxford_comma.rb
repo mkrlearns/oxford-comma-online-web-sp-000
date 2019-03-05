@@ -1,10 +1,11 @@
 def oxford_comma(array)
   array.each do |item|
+    new_array = []
     if item != array.last
-      array << "#{item}, "
+      new_array << "#{item}, "
     else
-      array << ", and #{item}"
+      new_array << ", and #{item}"
     end
   end
-  array
+  new_array
 end
