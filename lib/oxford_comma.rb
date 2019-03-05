@@ -4,7 +4,7 @@ def oxford_comma(array)
     if item != array.last
       new_array << "#{item}, "
     else
-      new_array << ", and #{item}"
+      new_array << "and #{item}"
     end
   end
   new_array
