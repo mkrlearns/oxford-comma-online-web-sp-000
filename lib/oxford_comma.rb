@@ -1,5 +1,5 @@
 def oxford_comma(array)
-  new_array = []
+  new_array = ""
   array.each do |item|
     if item != array.last
       new_array << "#{item}, "
