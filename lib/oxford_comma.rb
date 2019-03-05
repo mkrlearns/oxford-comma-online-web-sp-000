@@ -1,11 +1,13 @@
 def oxford_comma(array)
-  new_array = ""
+  string = ""
   array.each do |item|
-    if item != array.last
-      new_array << "#{item}, "
-    elsif item.length < 3
-      new_array << "and #{item}"
+    if item.length < 3
+      string << item
+    elsif item != array.last
+      string << "#{item}, "
+    else
+      string << "and #{item}"
     end
   end
-  new_array
+  string
 end
